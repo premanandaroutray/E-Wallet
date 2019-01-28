@@ -11,7 +11,7 @@ namespace Attra.EWallet
         {
             InitializeComponent();
 
-            MainPage = new LoginPage();
+            //MainPage = new LoginPage();
 
            
         }
