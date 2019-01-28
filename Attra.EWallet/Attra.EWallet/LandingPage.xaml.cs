@@ -18,7 +18,9 @@ namespace Attra.EWallet
 		}
 
         private async void Logout_OnClicked(object sender, EventArgs e)
-        {
+
+        // sample comment
+        { 
             //  var model = new LoginViewModel();
             //  this.BindingContext = model;
 
