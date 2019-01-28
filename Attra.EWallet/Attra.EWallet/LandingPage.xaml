@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Attra.EWallet.LandingPage" BackgroundImage="home.jpg">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to The Attra E-Wallet!"
+                VerticalOptions="CenterAndExpand" TextColor="White"
+                HorizontalOptions="CenterAndExpand" />
+
+            <Button Text="Logout" TextColor="White"  
+                    FontAttributes="None" FontSize="Micro" HorizontalOptions="Center"  
+                    BackgroundColor="#088da5" WidthRequest="200" HeightRequest="35" BorderRadius="30" Clicked="Logout_OnClicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
