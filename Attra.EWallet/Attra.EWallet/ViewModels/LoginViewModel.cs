@@ -15,6 +15,8 @@ namespace Attra.EWallet.ViewModels
         private string email;
         public string Email
         {
+
+            //some comments
             get { return email; }
             set
             {
