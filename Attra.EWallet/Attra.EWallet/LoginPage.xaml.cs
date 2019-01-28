@@ -15,6 +15,8 @@ namespace Attra.EWallet
     {
        // public ObservableCollection<string> Items { get; set; }
 
+
+
         public LoginPage()
         {
 
