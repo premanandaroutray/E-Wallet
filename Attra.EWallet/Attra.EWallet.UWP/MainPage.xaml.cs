@@ -20,6 +20,7 @@ namespace Attra.EWallet.UWP
         public MainPage()
         {
             this.InitializeComponent();
+            //Inital Comment
 
             LoadApplication(new Attra.EWallet.App());
         }
