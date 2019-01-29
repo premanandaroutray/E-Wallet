@@ -11,9 +11,10 @@ namespace Attra.EWallet
         {
             InitializeComponent();
 
-            MainPage = new LoginPage();
+            //MainPage = new LoginPage();
+            MainPage = new HomePage();
 
-           
+
         }
 
         protected override void OnStart()

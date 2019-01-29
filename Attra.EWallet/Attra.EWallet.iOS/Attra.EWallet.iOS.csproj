@@ -157,4 +157,37 @@
       <Name>Attra.EWallet</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ChangePin.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Failedtransactions.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Profile.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Purchase.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\RequestMoney.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\RequestPayment.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ScanToPay.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ScanToTopup.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SendMoney.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TransactionHistory.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Transactions.png" />
+  </ItemGroup>
 </Project>
