@@ -92,7 +92,6 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground1.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\drawable-hdpi\" />
     <Folder Include="Resources\drawable-xhdpi\" />
     <Folder Include="Resources\drawable-xxhdpi\" />
     <Folder Include="Resources\drawable-xxxhdpi\" />
@@ -106,6 +105,9 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\AppleiPhone.jpg" />
     <AndroidResource Include="Resources\drawable\Beautiful_flowers.jpg" />
+    <AndroidResource Include="Resources\drawable\App_logo.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\App_logo.png" />
+    <AndroidResource Include="Resources\drawable\background_screen_two.png" />
     <Content Include="Resources\drawable\bglogo1.jpg" />
     <AndroidResource Include="Resources\drawable\bgLogo2.jpg" />
     <AndroidResource Include="Resources\drawable\bgLogo3.jpg" />
@@ -122,6 +124,8 @@
     <AndroidResource Include="Resources\drawable\flower3.jpg" />
     <AndroidResource Include="Resources\drawable\home.jpg" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable\icons8_phone_dialer.png" />
+    <AndroidResource Include="Resources\drawable\icons8_contact.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\eWalletLogo.jpg" />

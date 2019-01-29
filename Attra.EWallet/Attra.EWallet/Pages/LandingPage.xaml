@@ -3,14 +3,32 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Attra.EWallet.LandingPage" BackgroundImage="home.jpg">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to The Attra E-Wallet!"
-                VerticalOptions="CenterAndExpand" TextColor="White"
-                HorizontalOptions="CenterAndExpand" />
+        <Grid BackgroundColor="Black">
+            <Grid.RowDefinitions>
 
-            <Button Text="Logout" TextColor="White"  
-                    FontAttributes="None" FontSize="Micro" HorizontalOptions="Center"  
-                    BackgroundColor="#088da5" WidthRequest="200" HeightRequest="35" BorderRadius="30" Clicked="Logout_OnClicked" />
-        </StackLayout>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Image Grid.Row="0" Margin="0,40,0,0"  WidthRequest="175" HeightRequest="96" Source="App_logo.png" />
+
+            <StackLayout Grid.Row="1" Margin="40,40,40,0">
+
+                <Label Text="Hi" FontSize="80" TextColor="White" HorizontalOptions="Center"/>
+                <Label Text="Welcome to Attra-Wallet" FontSize="20" TextColor="White" HorizontalOptions="Center"/>
+
+            </StackLayout>
+
+            <StackLayout Grid.Row="2" Margin="40,40,40,50">
+
+
+                <Button Text="Register" BackgroundColor="#f44e1b" TextColor="White" Clicked="Button_Clicked"/>
+ 
+            </StackLayout>
+
+
+
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
