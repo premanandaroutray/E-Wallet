@@ -1,61 +1,97 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Attra.EWallet.HomePage" BackgroundColor="LightGray">
+             x:Class="Attra.EWallet.HomePage" BackgroundColor="White">
     <ContentPage.Content>
-        <Grid RowSpacing="0">
-            <Grid.RowDefinitions>
+        <!--<StackLayout>-->
+            <AbsoluteLayout>
+            <Image Source="bgLogo5.jpg" Aspect="Fill" AbsoluteLayout.LayoutBounds="0,0,1,0.3" AbsoluteLayout.LayoutFlags="All"/>
+            <Grid AbsoluteLayout.LayoutBounds="0,1,1,0.5" AbsoluteLayout.LayoutFlags="All" Margin="20,0,20,20">
+                <Grid.RowDefinitions>
+                <RowDefinition Height="AUTO"/>
                 <RowDefinition Height="AUTO"/>
                 <RowDefinition Height="AUTO"/>
             </Grid.RowDefinitions>
-            <!--<Image Source="bgLogo5.jpg" Aspect="AspectFill" HeightRequest="100"></Image>-->
-            <BoxView BackgroundColor="White" HeightRequest="100" WidthRequest="200" HorizontalOptions="Center" VerticalOptions="Center" TranslationY="0"/>
-            <!--<BoxView BackgroundColor="Pink" Grid.Row="0" HeightRequest="50" WidthRequest="50" HorizontalOptions="Center" VerticalOptions="End" TranslationY="50"></BoxView>-->
-            <Image Source="ProfilePic.png" Grid.Row="0" HeightRequest="50" WidthRequest="50" HorizontalOptions="Center" VerticalOptions="End" TranslationY="50"/>
-            <Image Source="editPencil.png" Grid.Row="0" HeightRequest="20" WidthRequest="20" HorizontalOptions="Center" VerticalOptions="Center" TranslationX="25" TranslationY="100"></Image>
-            <Grid Grid.Row="1" TranslationY="90" >
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="AUTO"/>
-                    <RowDefinition Height="AUTO"/>
-                    <RowDefinition Height="AUTO"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-                <!--<BoxView BackgroundColor="Pink" Grid.Row="0" Grid.Column="0"/>-->
-                <StackLayout Grid.Row="0" Grid.Column="0" Margin="4,1,0,0" Padding="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.45*"/>
+                <ColumnDefinition Width="0.1*"/>
+                <ColumnDefinition Width="0.45*"/>
+            </Grid.ColumnDefinitions>       
+                <StackLayout Grid.Row="0" Grid.Column="0" VerticalOptions="Center">
                     <Image Source="ScanToPay.png" HeightRequest="25" WidthRequest="25"/>
-                    <Label Text="Scan to Pay" HorizontalOptions="Center" VerticalOptions="Center" TextColor="DarkGray" FontSize="Micro"/>
-                    <BoxView BackgroundColor="OrangeRed" HeightRequest="3"/>
+                    <Label Text="Scan To Pay" HorizontalTextAlignment="Center" FontSize="Micro"/>
+                    <BoxView BackgroundColor="OrangeRed" HeightRequest="2"/>
                 </StackLayout>
-                <StackLayout Grid.Row="0" Grid.Column="2" Margin="0,1,4,0" Padding="2">
+                <StackLayout Grid.Row="0" Grid.Column="2" VerticalOptions="Center">
                     <Image Source="ScanToTopup.png" HeightRequest="25" WidthRequest="25"/>
-                    <Label Text="Scan to Topup" HorizontalOptions="Center" VerticalOptions="Center" TextColor="DarkGray" FontSize="Micro"/>
-                    <BoxView BackgroundColor="OrangeRed" HeightRequest="3"/>
+                    <Label Text="Scan To Topup" HorizontalTextAlignment="Center" FontSize="Micro"/>
+                    <BoxView BackgroundColor="OrangeRed" HeightRequest="2"/>
                 </StackLayout>
-                <StackLayout Grid.Row="1" Grid.Column="0" Margin="4,1,0,0" Padding="2">
+                <StackLayout Grid.Row="1" Grid.Column="0" VerticalOptions="Center">
                     <Image Source="SendMoney.png" HeightRequest="25" WidthRequest="25"/>
-                    <Label Text="Scan Money" HorizontalOptions="Center" VerticalOptions="Center" TextColor="DarkGray" FontSize="Micro"/>
-                    <BoxView BackgroundColor="OrangeRed" HeightRequest="3"/>
+                    <Label Text="Send Money" HorizontalTextAlignment="Center" FontSize="Micro"/>
+                    <BoxView BackgroundColor="OrangeRed" HeightRequest="2"/>
                 </StackLayout>
-                <StackLayout Grid.Row="1" Grid.Column="2" Margin="0,1,4,0" Padding="2">
+                <StackLayout Grid.Row="1" Grid.Column="2" VerticalOptions="Center">
                     <Image Source="RequestMoney.png" HeightRequest="25" WidthRequest="25"/>
-                    <Label Text="Request Money" HorizontalOptions="Center" VerticalOptions="Center" TextColor="DarkGray" FontSize="Micro"/>
-                    <BoxView BackgroundColor="OrangeRed" HeightRequest="3"/>
+                    <Label Text="Request Money" HorizontalTextAlignment="Center" FontSize="Micro"/>
+                    <BoxView BackgroundColor="OrangeRed" HeightRequest="2"/>
                 </StackLayout>
-                <StackLayout Grid.Row="2" Grid.Column="0" Margin="4,1,0,0" Padding="2">
+                <StackLayout Grid.Row="2" Grid.Column="0" VerticalOptions="Center">
                     <Image Source="TransactionHistory.png" HeightRequest="25" WidthRequest="25"/>
-                    <Label Text="Transaction History" HorizontalOptions="Center" VerticalOptions="Center" TextColor="DarkGray" FontSize="Micro"/>
-                    <BoxView BackgroundColor="OrangeRed" HeightRequest="3"/>
+                    <Label Text="Transaction History" HorizontalTextAlignment="Center" FontSize="Micro"/>
+                    <BoxView BackgroundColor="OrangeRed" HeightRequest="2"/>
                 </StackLayout>
-                <StackLayout Grid.Row="2" Grid.Column="2" Margin="0,1,4,0" Padding="2">
+                <StackLayout Grid.Row="2" Grid.Column="2" VerticalOptions="Center">
                     <Image Source="ChangePin.png" HeightRequest="25" WidthRequest="25"/>
-                    <Label Text="Change Pin" HorizontalOptions="Center" VerticalOptions="Center" TextColor="DarkGray" FontSize="Micro"/>
-                    <BoxView BackgroundColor="OrangeRed" HeightRequest="3"/>
+                    <Label Text="Change Pin" HorizontalTextAlignment="Center" FontSize="Micro"/>
+                    <BoxView BackgroundColor="OrangeRed" HeightRequest="2"/>
                 </StackLayout>
             </Grid>
-        </Grid>
+            <!--<Frame HasShadow="True" BackgroundColor="Blue">
+            <BoxView BackgroundColor="White" CornerRadius="5" AbsoluteLayout.LayoutBounds="0.5,0.25,0.90,0.25" AbsoluteLayout.LayoutFlags="All"></BoxView>
+            </Frame>-->
+            <Frame BackgroundColor="White" HasShadow="True" Padding="5" CornerRadius="5" AbsoluteLayout.LayoutBounds="0.5,0.25,0.90,0.30" AbsoluteLayout.LayoutFlags="All">
+                <StackLayout VerticalOptions="End">
+                    <Label Text="Hola!" HorizontalOptions="Center" TextColor="Gray" FontSize="Micro"/>
+                    <Label Text="John Doe" HorizontalOptions="Center" TextColor="Black" FontSize="Micro"/>
+                    <Grid RowSpacing="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="aUTO"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="AUTO"/>
+                        </Grid.ColumnDefinitions>
+                        <StackLayout Grid.Row="0" Grid.Column="0" Orientation="Horizontal">
+                            <Image Source="WalletIcon.png" HeightRequest="15" WidthRequest="15"/>
+                            <Label Text="Wallet Balance" FontSize="Micro"/>                            
+                        </StackLayout>
+                        <StackLayout Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
+                            <Image Source="RupeeIcon.png" HeightRequest="15" WidthRequest="15"/>
+                            <Label Text="5690" HorizontalTextAlignment="Start" FontSize="Medium"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="1" Grid.Column="1" VerticalOptions="End">
+                            <Button Text="Add Balance" FontSize="8" TextColor="White" BackgroundColor="OrangeRed" HeightRequest="15" WidthRequest="80" Padding="0" Margin="0" CornerRadius="15"/>
+                        </StackLayout>                        
+                    </Grid>
+                    <!--<StackLayout Orientation="Horizontal">
+                        <Label Text="Wallet Balance" FontSize="Micro"/>
+                        <Button Text="Add Balance" FontSize="8" TextColor="White" BackgroundColor="OrangeRed" HeightRequest="15" WidthRequest="50" Padding="0" Margin="0" CornerRadius="15"/>
+                    </StackLayout>-->
+                    <!--<Label Text="5690" HorizontalTextAlignment="Start" FontSize="Medium"/>-->
+                </StackLayout>
+            </Frame>
+            <Frame Padding="10" CornerRadius="30" AbsoluteLayout.LayoutBounds="0.50,0.15,0.22,0.13" AbsoluteLayout.LayoutFlags="All">               
+                <Image Source="Profilepic4.jpg" >
+                
+                </Image>                
+            </Frame>
+            <Frame Padding="0" CornerRadius="30" AbsoluteLayout.LayoutBounds="0.60,0.22,0.09,0.06" AbsoluteLayout.LayoutFlags="All" HasShadow="True" BorderColor="Black">
+                <Image Source="EditPencilIcon.png"/>
+            </Frame>
+        </AbsoluteLayout>
+            <!--</StackLayout>-->
     </ContentPage.Content>
 </ContentPage>

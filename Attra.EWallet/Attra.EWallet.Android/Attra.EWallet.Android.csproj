@@ -126,6 +126,7 @@
     <AndroidResource Include="Resources\drawable\editPencil.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </AndroidResource>
+    <AndroidResource Include="Resources\drawable\EditPencilIcon.png" />
     <Content Include="Resources\drawable\flower.jpg" />
     <AndroidResource Include="Resources\drawable\flower_2.jpg" />
     <AndroidResource Include="Resources\drawable\flower3.jpg" />
@@ -162,6 +163,17 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\icons8_qr_code_52.png" />
+    <AndroidResource Include="Resources\drawable\profilePic2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\profilePic3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\RupeeIcon.png" />
+    <AndroidResource Include="Resources\drawable\WalletIcon.png" />
+    <AndroidResource Include="Resources\drawable\Profilepic4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\eWalletLogo.jpg" />
