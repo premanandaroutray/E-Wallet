@@ -16,12 +16,7 @@ namespace Attra.EWallet.Pages
 		public TranHistoryPage ()
 		{
 			InitializeComponent ();
-            lbldate.Text = DateTime.Now.ToString("dd MMM,yyyy.hh:mm tt.");
-            lbltime.Text = DateTime.Now.ToShortTimeString();
+            CurDateTime.Text = DateTime.Now.ToString("dd MMM,yyyy.hh:mm tt.");
 		}
 	}
-    //public String datetime;
-    //public class DateTime
-    //{
-      //  get{return DateTime};
 }

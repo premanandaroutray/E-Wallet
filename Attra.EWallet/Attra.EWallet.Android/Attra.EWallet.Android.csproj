@@ -119,6 +119,7 @@
     <AndroidResource Include="Resources\drawable\iPhoneX.png" />
     <AndroidResource Include="Resources\drawable\ewallet.png" />
     <AndroidResource Include="Resources\drawable\E_wallet.png" />
+    <AndroidResource Include="Resources\drawable\Filter.png" />
     <Content Include="Resources\drawable\flower.jpg" />
     <AndroidResource Include="Resources\drawable\flower_2.jpg" />
     <AndroidResource Include="Resources\drawable\flower3.jpg" />
@@ -126,6 +127,9 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\drawable\icons8_phone_dialer.png" />
     <AndroidResource Include="Resources\drawable\icons8_contact.png" />
+    <AndroidResource Include="Resources\drawable\SendArrow.png" />
+    <AndroidResource Include="Resources\drawable\Search.png" />
+    <AndroidResource Include="Resources\drawable\LeftArrow.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\eWalletLogo.jpg" />
