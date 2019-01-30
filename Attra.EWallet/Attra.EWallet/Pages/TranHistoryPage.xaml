@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Attra.EWallet.Pages.TranHistoryPage">
+    <ContentPage.Content>
+        <Grid BackgroundColor="LightPink" RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="AUTO"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" BackgroundColor="LightGreen" WidthRequest="100"
+                     HeightRequest="150" ColumnSpacing="0">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="AUTO"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <StackLayout Grid.Column="0" Margin="0,50,20,0">
+                    <!--<BoxView BackgroundColor="Black"/>-->
+                    <Image Source="BackButton.png"/>
+                </StackLayout>
+
+                <StackLayout Grid.Column="1" Margin="0,20">
+                    <!--<BoxView BackgroundColor="Blue"/>-->
+                    <Label Text="Attra Wallet History" VerticalOptions="Center" FontAttributes="Bold" FontSize="20" HorizontalTextAlignment="Center"/>
+                    <Label Text="Available Balance: " HorizontalOptions="Center"/>
+                    <Label Text="{Binding Date}" x:Name="lbldate" HorizontalOptions="Center"/>
+                    <Label Text="{Binding Time}" x:Name="lbltime" HorizontalOptions="Center"/>
+
+                </StackLayout>
+
+                <StackLayout Grid.Column="2">
+                    <!-- <BoxView BackgroundColor="Brown"/>-->
+                    <Image Source="Search.png"/>
+                    <Image Source="Filter.png" HeightRequest="20" WidthRequest="20"/>
+                </StackLayout>
+            </Grid>
+
+            <Grid Grid.Row="1" BackgroundColor="Wheat" VerticalOptions="FillAndExpand"/>
+
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
