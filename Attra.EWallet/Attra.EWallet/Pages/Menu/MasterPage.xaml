@@ -2,12 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Attra.EWallet.Pages.Menu.MasterPage"
-             Title="Attra e-Wallet">
+             Title="Attra e-Wallet" >
     <ContentPage.Content>
         <StackLayout x:Name="MasterStack" VerticalOptions="FillAndExpand">
             <StackLayout x:Name="TopStack">
-                <Label Text="Test Project" HorizontalOptions="Center" FontSize="Large" />
-                
+                <Label Text="Attra E-Wallet" HorizontalOptions="Center" FontSize="Large" />
+               
             </StackLayout>
 
             <StackLayout x:Name="MidStack" VerticalOptions="FillAndExpand">

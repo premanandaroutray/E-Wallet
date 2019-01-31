@@ -12,9 +12,11 @@ namespace Attra.EWallet.Pages.DetailViews
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class InfoScreen1 : ContentPage
 	{
+
 		public InfoScreen1 ()
 		{
 			InitializeComponent ();
+              
 		}
 	}
 }

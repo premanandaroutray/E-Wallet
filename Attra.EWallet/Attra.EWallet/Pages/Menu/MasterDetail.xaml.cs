@@ -20,14 +20,17 @@ namespace Attra.EWallet.Pages.Menu
 
              masterpage.ListView.ItemSelected += OnItemSelected;      
         }
-        private void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+        private  void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var item = e.SelectedItem as MasterMenuItem;
             if(item!=null)
             {
                 Detail = new NavigationPage((Page)Activator.CreateInstance(item.TargetType));
                 masterpage.ListView.SelectedItem = null;
+                
                 IsPresented = false;
+                //await Navigation.PushModalAsync(Detail);
+                // Detail.Navigation.PopModalAsync();
             }
         }
     }

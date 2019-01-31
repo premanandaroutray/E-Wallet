@@ -21,11 +21,12 @@ namespace Attra.EWallet.Pages.Menu
             SetItems();
 
         }
+        
         void SetItems()
         {
             items = new List<Models.MasterMenuItem>();
             items.Add(new Models.MasterMenuItem("InfoScreen1", "icons8_contact.png", Color.White, typeof(InfoScreen1)));
-            items.Add(new Models.MasterMenuItem("InfoScreen2", "money_bag.png", Color.White, typeof(InfoScreen2)));
+            items.Add(new Models.MasterMenuItem("InfoScreen2", "money_bag.png", Color.White, typeof(TranHistoryPage)));
             ListView.ItemsSource = items;
 
         }

@@ -3,9 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                   xmlns:local="clr-namespace:Attra.EWallet.Pages.Menu;assembly=Attra.EWallet"
                   xmlns:detailviews="clr-namespace:Attra.EWallet.Pages.DetailViews"
-                  
-               x:Class="Attra.EWallet.Pages.Menu.MasterDetail" >
-    <MasterDetailPage.Master>
+               x:Class="Attra.EWallet.Pages.Menu.MasterDetail"    >
+    <MasterDetailPage.Master >
         <local:MasterPage x:Name="masterpage" />
     </MasterDetailPage.Master>
     <MasterDetailPage.Detail>

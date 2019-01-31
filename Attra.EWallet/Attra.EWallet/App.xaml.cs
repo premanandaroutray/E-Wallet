@@ -1,5 +1,6 @@
 ﻿using Attra.EWallet.Pages.Menu;
 using System;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -32,7 +33,6 @@ namespace Attra.EWallet
             // Handle when your app resumes
         }
 
-        // to show OtherPage and be able to go back
        
     }
 }

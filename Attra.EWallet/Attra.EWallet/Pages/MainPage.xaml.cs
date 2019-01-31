@@ -14,6 +14,6 @@ namespace Attra.EWallet
             InitializeComponent();
         }
 
-
+       
     }
 }
